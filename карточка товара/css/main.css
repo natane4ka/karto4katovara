@@ -1,0 +1,139 @@
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+html{
+    height: 100%;
+}
+
+body{
+    max-height: 100%;
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 28px;
+    color: #242222dc;
+}
+
+.pic img{
+    max-width: 100%;
+    max-height: 100vh;
+}
+
+.pic{
+    /* width: 50%; */
+    margin-right: 40px;
+}
+
+.wrapper{
+    max-width: 1200px;
+    outline: 3px solid rgb(6, 98, 110);
+    margin: 5% auto 5% auto;
+    padding: 40px;
+    display: flex;
+}
+
+.text{
+    position: relative;
+    overflow: hidden;
+
+}
+
+.text h2{
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 34px;
+    text-indent: 20pt;
+    color: rgba(2, 15, 36, 0.925);
+    line-height: 37px;
+    letter-spacing: 2px;
+    word-spacing: 8px;
+    margin-bottom: 30px;
+}
+
+.text p{
+    margin-bottom: 25px;
+}
+
+.text .price{
+    /* font-family: 'Roboto Condensed', sans-serif; */
+    font-size: 34px;
+    font-weight: bold;
+    text-indent: 40pt;
+    color: #010101;
+    line-height: 35px;
+    letter-spacing: 3px;
+    word-spacing: 10px;
+    margin-top: 22pt;
+    margin-bottom: 22px;
+}
+
+.text a{
+    display: block;
+    background-color: rgba(62, 141, 231, 0.486);
+    text-align: center;
+    width: 250px;
+    padding: 10px 0 10px 0;
+    border: 2px solid rgb(6, 98, 110);
+    border-radius: 7px;
+    text-transform: uppercase;
+    font-weight: normal;
+    color: #ffffff;
+    cursor: pointer;
+    transition: all .4s;
+}
+
+.circl{
+    width: 250px;
+    height: 250px;
+    background-image: url("../img/tapokvuglu.jpg");
+    opacity: .5;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    border-radius: 50%;
+    overflow: hidden;
+    position: absolute;
+    bottom: -90px;
+    right: -50px;
+    z-index: -1;
+}
+
+.text a:hover{
+   
+    background-color: rgb(243, 194, 194);
+   
+    border: 2px solid #7b0abd;
+    border-radius: 5px;
+    
+    
+    color: rgb(240, 67, 14);
+}
+
+@media (max-width: 767px) {
+    .wrapper{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .text{
+        /* display: flex;
+        justify-content: center;
+        flex-wrap: wrap; */
+        text-align: left;
+    }
+    .text a{
+        width: 100%;
+    }
+    .circl{
+        display: none;
+    }
+}
